@@ -19,6 +19,11 @@ pipeline {
                 }
             }
         }
+        stage("Run the spring application") {
+            steps {
+                sh "pwd"
+            }
+        }
     }
     post {
         success {
